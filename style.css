@@ -1,0 +1,257 @@
+
+/* ----------------
+    common style
+  -----------------   */
+body{
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif
+    
+}
+/* -------------------
+     style for first section
+   ------------------- */
+   .first-section{
+    background: #161616;
+    color: #fff;
+    border-radius: 20px;
+    margin: 50px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 580px;
+ 
+   }
+   h1{
+    font-size: 70px;
+    font-weight: 700;
+    color: white;
+   }
+   
+   .first-section-top{
+    margin: 20px;
+   
+   }
+   .font{
+    font-size: 16px;
+    color: white;
+    
+
+   }
+   .btn{
+    background-color: darkseagreen;
+    color: white;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+    padding: 20px;
+    animation: example infinite  2s ;
+    align-items: center;
+   }
+   .btn:hover{
+    font-size: 1rem;
+   }
+   @keyframes example {
+    from {background-color: #f47070;}
+    to {background-color: rgb(234, 40, 6)}
+   }
+   .first-section img {
+    width: 90%;
+    vertical-align: middle;
+    position: relative;
+    bottom: 0;
+    animation: mymove 8s infinite;
+
+   }
+   @keyframes mymove {
+    from {left: 0px;}
+    to {left: 80px;}
+  }
+
+/* -------------
+   second section style 
+   -------------- */
+   .second-section{
+    display: flex;
+    gap: 10px;
+    margin: 50px;
+
+   }
+   .second-section-top{
+    background-color: black;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    padding: 15px 0;
+    
+    border-radius: 10px;
+    /* position: sticky; */
+   }
+   .second-section-top .btn-link{
+    text-decoration: none;
+    margin: 15px;  
+    padding: 10px 30px ;
+    display: grid;
+    grid-template-rows: repeat(1 , 1fr);
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    transition: all .5s;
+   } 
+   .btn-link.active{
+    background-color:#4f2ef3;
+    color: white;
+   }
+   .btn-link:hover{
+    background-color: #f47070;
+    color: white;
+   }
+   .second-section-bottom{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3 ,1fr);
+   }
+   .blogs{
+    border-radius: 10px;
+   }
+     
+  .blog-0 img {
+     width: 100%;
+  }
+  button:hover{
+    background-color: #f47070;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 2px;
+  }
+    .clock-comment{
+    display: flex;
+    justify-content: space-around;
+   } 
+    /* -----------------------
+      btn for tablate view
+      ----------------------- */
+      .btn-for-tab{
+        text-align: center;
+        display: none;
+      }
+
+   /* ------------------
+       foooter style
+    -------------------- */
+    .footer{
+        background-color: #161616;
+        color: beige;
+       
+    }
+    .footer-fast{
+        font-size: 700;
+        text-align: center;
+    }
+    .footer-last{
+        
+        display: flex;
+        margin: 10px;
+        padding: 10px 20px;
+        justify-content: space-evenly;
+       
+    }
+    .footer-last a{
+        text-decoration: none;
+        color: white;
+        padding: 15px 0;
+    }
+    .footer-middle{
+        border: 1px solid white;
+    }
+    .footer-icone{
+        text-align: center;
+    }
+    .footer-icone a {
+        font-size: 80px;
+        margin: 10px;
+        padding: 10px;
+       
+    }
+    /* -------------
+     for media screen style
+     for mobile maximum 577px
+     --------------------- */
+     @media only screen and (max-width: 577px ){
+        .first-section{
+            grid-template-columns: repeat(1 , 1fr);
+
+        }
+        .first-section img {
+            width: 80%;
+            vertical-align: middle;
+            position: relative;
+            bottom: 0;
+            animation: mymove 8s infinite;
+        
+           }
+        .second-section{
+            display: grid;
+            grid-template-rows: repeat(1 ,1fr);
+            align-items: center;
+            justify-content: center;
+        }
+        .second-section-top{
+            background-color: white;    
+           width: 100%;
+           height: 200px;
+        }
+        .second-section-bottom{
+            display: grid;
+            grid-template-columns: repeat(1 ,1fr);
+        }
+        .footer-last{
+            flex-direction: column;
+            align-items: center;
+        }        
+     }
+     /* -----------------------------------------------------
+      media sereen style for tab width distance (578-992px)
+      -------------------------------------------------------  */
+      @media only screen and (min-width: 578px) and (max-width: 992px) {
+        .first-section{
+            grid-template-columns: repeat(1 , 1fr);
+
+        }
+        .second-section{
+            flex-direction: column;
+        }
+        .second-section-top{
+            width: auto;
+            height: auto;
+            background-color: white;
+        }
+        .second-section-top a{
+           display: inline;
+           margin-left: 50px;
+           padding: 10px 50px;
+        }
+        .second-section-bottom{
+            display: grid;
+            grid-template-columns: repeat(2 ,1fr);
+        }
+        .btn-for-tab{
+            display: block;
+        }
+
+        
+      }
+
+
+
+
+
+
+
+
+
